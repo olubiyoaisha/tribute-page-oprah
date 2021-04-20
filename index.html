@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    
      <!-------------------------------------AOS CSS Links------------------------------------->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -22,167 +21,168 @@
     <!-- Custom Css-->
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Tribute  page</title>
+
   </head>
   <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: #e36414;" class="nav-link active px-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #e36414;" class="nav-link px-4" href="#about">About </a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #e36414;" class="nav-link px-4" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #e36414;" class="nav-link px-4" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./Assests/images/cart.png" alt="" width="50%">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-    <!--homepage-->
-   <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-default p-3 mt-1">
-          <div class="container-fluid px-5">
-            <a class="navbar-brand" href="#">
-              <img class="logo" src="./asset/images/logo.jpeg" alt="">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a style="color: #e36414;" class="nav-link active px-4" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a style="color: #e36414;" class="nav-link px-4" href="#about">About </a>
-                </li>
-                <li class="nav-item">
-                  <a style="color: #e36414;" class="nav-link px-4" href="#socials">socials</a>
-                </li>
-                <li class="nav-item">
-                  <a style="color: #e36414;" class="nav-link px-4" href="#testimonials">Testimonials</a>
-                </li>
-                <li class="nav-item px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="./Assests/images/cart.png" alt="" width="50%">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </header>
+    <!--Banner-->
     <section id="banner" class="p-5">
       <div class="container">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./asset/images/oprah winfe smile.jpeg" class="d-block w-100" alt="...">
-              <div class="slidecard p-5">
-                <h5>  Qoute</h5>
-                <h6>
-                  “Turn your wounds<br> into wisdom.”
-                    – Oprah Winfrey <br>
-                
-                </h6>
+              <img src="/asset/images/oprah winfe smile.jpeg" class="d-block w-100" alt="...">
+              <div class="top-right d-none d-md-block p-3">
+                <h5>Qoute</h5>
+                <p>“Turn your wounds into wisdom.” – Oprah WinfreyPrevious</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./asset/images/Oprah_Winfrey 2.jpg" class="d-block w-100" alt="...">
-              <div class="slidecard p-5">
+              <img src="/asset/images/Oprah_Winfrey 2.jpg" class="d-block w-100" alt="...">
+              <div class="top-right d-none d-md-block p-3">
                 <h5>NEW DAWN</h5>
-                <h6>
-                  DREAM BIG  – Oprah Winfrey<br>
-
-                </h6>
+                <p>DREAM BIG – Oprah Winfrey Previous</p>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-            <span style="background-color: #e36414;" class="carousel-control-prev-icon p-3" aria-hidden="true"></span>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </a>
+          </button>
         </div>
       </div>
     </section>
 
-   
-        <!--About-->
-    
-    <section  id="about" class="bg-light p-5">
+    <section id="about" class="p-5">
       <div class="container">
-        <div data-aos="fade-right" data-aos-duration="1500" class="row p-3">
-          <div class="col-md-6 p-5"  style="color: #008e98;">
-            <h6 class="font-bold">HISTORY</h6>
-            <p>Winfrey was born into poverty in rural Mississippi to a single teenage mother and later raised in inner-city Milwaukee. She has stated that she was molested during her childhood and early teens and became pregnant at 14; her son was born prematurely and died in infancy.[13] Winfrey was then sent to live with the man she calls her father, Vernon Winfrey, a barber in Tennessee, and landed a job in radio while still in high school. By 19, she was a co-anchor for the local evening news. Winfrey's often emotional, extemporaneous delivery eventually led to her transfer to the daytime talk show arena, and after boosting a third-rated local Chicago talk show to first place,[14]
-               <br>she launched her own production company.</p>
-              <p>Dramatically synthesize integrated schemas. with optimal networks.</p>
-          </div>
-          <div class="col-md-6 p-3" >
-            <img src="./asset/images/old pic.jpeg" alt="" style="width: 100%; border-radius: 50%; background-color: #e36414;" >
-          </div>
+        <div class="title p-3 text-center">
+          <h2>About</h2>
         </div>
-        
-
-        <div data-aos="fade-left" data-aos-duration="1500" class="row p-3">
-          <div class="col-md-6 p-3  "   >
-            <img src="./asset/images/Orpah-Gail-Winfrey.jpg" alt="" style="width: 100%; border-radius: 50%; border-color: #e36414;">
-          </div>
-          <div class="col-md-6 p-5" style="color: #008e98;">
-            <h6 class="font-bold">CAREER</h6>
-            
-            <p>Oprah Gail Winfrey (born Orpah Gail Winfrey;[1] January 29, 1954) is an American talk show host,
-               <br>television producer, actress, author, and philanthropist. She is best known for her talk show, The Oprah Winfrey Show, broadcast from Chicago, which was the highest-rated television program of its kind in history and ran in national syndication for 25 years, from 1986 to 2011.[4][better source needed] Dubbed the "Queen of All Media,”[5] she was the richest African American of the 20th century[6][7] and North America's first black multi-billionaire,[8] and she has been ranked the greatest black philanthropist in American history.
-              <br> By 2007, she was sometimes ranked as the most influential woman in the world.[11][12]  </p>
-            <button type="button" class="btn btn-outline-secondary rounded-pill">LEARN MORE</button>
-          </div>
+        <div class="row" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-6 P-3">
+              <h4 class="">HISTORY</h4>
+              <p class="text-justify">
+                Winfrey was born into poverty in rural Mississippi to a single teenage mother and later raised in inner-city Milwaukee. She has stated that she was molested during her childhood and early teens and became pregnant at 14; her son was born prematurely and died in infancy.[13] Winfrey was then sent to live with the man she calls her father, Vernon Winfrey, a barber in Tennessee, and landed a job in radio while still in high school. By 19, she was a co-anchor for the local evening news. Winfrey's often emotional, extemporaneous delivery eventually led to her transfer to the daytime talk show arena, and after boosting a third-rated local Chicago talk show to first place,[14]
+                she launched her own production company.
+              </p>
+              <p class="text-justify">
+                Dramatically synthesize integrated schemas. with optimal networks.
+              </p>
+            </div>
+            <div class="col-md-6 p-5">
+              <img style="max-height: 80%;" class="w-100 rounded-circle" src="/asset/images/old pic.jpeg" alt="">
+            </div>
         </div>
-        <hr>
-
-       
-    </section>
-
-    
-     <!--socials-->
-
- <section id="socials" class="p-5">
-      <div class="container">
-        <div class="about-container justify-content-center">
-          <img data-aos="fade-left" data-aos-duration="1500" src="./asset/images/Oprah-Winfrey.jpg" alt="Avatar"
-           class="image d-block" style="border-radius: 50%;">
-          <div data-aos="fade-right" data-aos-duration="1500" class="mycard p-5" style="background-color: #e36414;">
-            <h5>The woman with power</h5>
-            <h2>
-              OPRAY <br>
-            WINFREY
-            </h2>
-          </div>
+        <div class="row" data-aos="fade-right" data-aos-duration="1500">
+            <div class="col-md-6 p-5">
+              <img style="max-height: 90%;" class="w-100 rounded-circle" src="/asset/images/Orpah-Gail-Winfrey.jpg" alt="">
+            </div>
+            <div class="col-md-6 P-3">
+              <h4 class="">CAREER</h4>
+              <p class="text-justify">
+                Oprah Gail Winfrey (born Orpah Gail Winfrey;[1] January 29, 1954) is an American talk show host,
+                television producer, actress, author, and philanthropist. She is best known for her talk show,
+              </p>
+              <p class="text-justify">
+                The Oprah Winfrey Show, broadcast from Chicago, which was the highest-rated television program of
+                 its kind in history and ran in national syndication for 25 years, from 1986 to 2011.[4][better source needed] Dubbed the "Queen of All Media,”
+              </p>
+              <p class="text-justify">
+                she was the richest African American of the 20th century[6][7] and North America's first black multi-billionaire,[8] and she has been ranked the greatest black philanthropist in American history.
+                By 2007, she was sometimes ranked as the most influential woman in the world.
+              </p>
+              <button class="btn btn-outline-secondary">LEARN MORE</button>
+            </div>
         </div>
       </div>
-    </section> 
+    </section>
 
-
-        <!--Testimonials-->
-    <section id="testimonials" class= bg-light p-5>
-      <h2 class="popular">Popular videos</h2>
+    <!--Profile-->
+    <section id="profile" class="p-5">
       <div class="container">
+        <div class="title p-3 text-center" style="color: #fff;">
+          <h2>Profile</h2>
+        </div>
         <div class="row">
-          <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
-                <iframe width="100%"  height="315" src="https://www.youtube.com/embed/2yqSMHLL0Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                ; picture-in-picture" allowfullscreen></iframe>
+          <div class="col-md-6 d-none d-md-block" data-aos="fade-left" data-aos-duration="1500">
+            <img class="rounded-circle" src="/asset/images/Oprah-Winfrey.jpg" alt="">
           </div>
-          <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
-               <iframe width="100%" height="315" src="https://www.youtube.com/embed/62RHmcLDn0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text">The woman with power</p>
+                    <h3 class="card-title">OPRAY <br> WINFREY</h3>
+                  </div>
+                </div>
           </div>
-          <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
-               <iframe width="100%" height="315" src="https://www.youtube.com/embed/WXQPbET07-E" title="YouTube video player" frameborder="0" allow="accelerometer; 
-               autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         
         </div>
       </div>
     </section>
-       
 
+      <!--Testimonials-->
+    <section id="testimonials" class="bg-light p-5">
+        <div class="container">
+          <div class="title text-center p-3">
+            <h2 class="popular">Popular videos</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
+                  <iframe width="100%"  height="315" src="https://www.youtube.com/embed/2yqSMHLL0Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                  ; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
+                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/62RHmcLDn0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-4 " data-aos="zoom-in-right" data-aos-duration="1500" class="">
+                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/WXQPbET07-E" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+          </div>
+        </div>
+    </section>
 
-
-     <!--footer-->
-
-    <footer class="p-5">
+    <!--footer-->
+    <footer class="pt-4">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="d-flex">
                 <div>
                   <a class="navbar-brand" href="#">
-                    <img src="./asset/images/logo2.jpeg" alt="" width="80%">
+                    <img src="../asset/images/logo2.jpeg" alt="logo" width="80%">
                   </a>
                 </div>
                 <div>
@@ -220,13 +220,16 @@
       </div>
     </footer>
 
-        
-  
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
 
      <!-------------------------------------AOS Links------------------------------------->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -235,10 +238,11 @@
     <script src="./Assests/js/app.js"></script>
    
     <script>
-        // AOS Animation
-AOS.init({
-    duration: 1000,// values from 0to 3000, with step 50ms
-});
+                // AOS Animation
+        AOS.init({
+            duration: 1000,// values from 0to 3000, with step 50ms
+        });
     </script>
+
   </body>
 </html>
