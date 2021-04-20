@@ -1,0 +1,128 @@
+
+body  {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', sans-serif;
+    background-color:#005566;
+    color:  #e36414 ;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #fff;
+    
+}
+
+.text-purple {
+    color:  #e36414;
+}
+
+.text-grey {
+    color: #b0b0b0;
+}
+
+
+.carousel-caption {
+    position: relative;
+    background-color:#ed7f09;
+    bottom: 300px;
+    right: -200px;
+    height: 200px;
+}
+
+.slidecard {
+    position: absolute; 
+    top: 50px;
+    right: 0;
+    background: #e36414;
+    color: #f1f1f1;
+  }
+
+.w-100 {
+    width: 80% !important;
+    height: 600px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    bottom: 50px;
+    background-color: #b33404;
+}
+
+.card {
+    border: none;
+}
+
+/* .card-body {
+    background-color: #b08ead;
+    color: #fff; */
+}
+
+.link-light {
+    text-decoration: none;
+    font-size: .9em;
+}
+/* about style */
+.about-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 300px; */
+  }
+  
+  .image {
+    width: 60%;
+    height: auto;
+  }
+
+
+  .mycard {
+    position: absolute; 
+    top: 50px;
+    left: 0;
+    background: ;
+    color: #f1f1f1;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .popular{
+      text-align: center;
+  }
+
+/* end about style */
+.form-control {
+    background-color: transparent;
+    color: #fff !important;
+}
+
+input {
+    border: 2px solid #fff;
+}
+
+.steps {
+    width: 100px;
+    height: 100px;
+    background-color: #ba9fb7;
+    margin: 0 auto;
+}
+
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color:  #e36414;
+}
+
+.fab, .fas, .far {
+    color:#fff ;
+}
+
+.fas, .far {
+    font-size: 35px;
+}
+
